@@ -1,7 +1,7 @@
 === Plugin Name ===
 
-Plugin Name: WP Admin UI
-Author: Smarty Studio (https://www.smartystudio.net)
+Plugin Name: SmartyStudio - WP Admin UI
+Author: SMARTY STUDIO (https://www.smartystudio.net)
 Contributors: Smarty Studio MBN Ltd., Martin Nestorov
 Version: 1.0
 Requires at least: 3.9.0
@@ -11,13 +11,13 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: admin-ui, admin-panel, wp-admin, wp-admin-ui, admin-dashboard, custom-admin, custom-admin-ui
 
-Clean, blue theme that's customizable for the WordPress Admin panel and Admin Bar.
+WordPress Admin UI is a super clean, gray and yellow colored admin panel theme with the ability to change the colors.
 
 == Description ==
 
-Wordpress's admin themes are great, but we wanted to take it a step further. This is a clean blue/gray theme by default for the admin panel that simplifies the interface and makes things more accessible for our customers. Customize your colors by visiting Settings > General
+Wordpress's admin themes are great, but we wanted to take it a step further. This is a clean yellow/gray theme by default for the admin panel that simplifies the interface and makes things more accessible for our customers. Customize your colors by visiting Settings > General
 
-If there are any features you'd like to see or bugs with other plugins - visit the support tab and let me know.
+If there are any features you'd like to see or bugs with other plugins - visit the support tab and let us know.
 
 == Improvements made ==
 

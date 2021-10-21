@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: WordPress Admin UI
+ * Plugin Name: SmartyStudio - WP Admin UI
  * Plugin URI: https://www.smartystudio.net
- * Author: Smarty Studio
+ * Author: SMARTY STUDIO (https://www.smartystudio.net)
  * Author URI: https://www.smartystudio.net
  * Description: WordPress Admin UI is a super clean, gray and yellow colored admin panel theme with the ability to change the colors.
  * Version: 1.0
@@ -21,7 +21,7 @@ require_once('lib/classes/smartystudio-secondary-color-settings-class.php');
  * Theme functions
  */
 require_once('lib/functions/smartystudio-admin-settings-functions.php');
-require_once('lib/functions/smartystudio-admin-widgets-functions.php');
+
 
 if (!function_exists('smartystudio_admin_ui_primary_color')) {
 	/**
@@ -86,22 +86,6 @@ if (!function_exists('smartystudio_admin_bar_style')) {
 	}
 
 	add_action('admin_enqueue_scripts', 'smartystudio_admin_bar_style');
-}
-
-if (!function_exists('smartystudio_admin_widgets_style')) {
-	/**
-	 * @return void
-	 */
-	function smartystudio_admin_widgets_style() {
-		wp_enqueue_style('smartystudio-widgets-style', plugins_url() . '/smartystudio-admin-ui/src/assets/css/smartystudio-admin-widgets.css');
-		
-		$admin_widgets_css  = '.main_dashboard_widget_button a:hover { border: 1px solid ' . smartystudio_admin_ui_secondary_color() . ' !important; color: ' . smartystudio_admin_ui_primary_color() . ' !important; }';
-		$admin_widgets_css .= '.main_dashboard_widget_button a:hover { border: 1px solid ' . smartystudio_admin_ui_secondary_color() . ' !important; }';
-		
-		wp_add_inline_style('smartystudio-admin-bar-style', $admin_widgets_css);
-	}
-
-	add_action('admin_enqueue_scripts', 'smartystudio_admin_widgets_style');
 }
 
 if (!function_exists('smartystudio_admin_theme_style')) {
@@ -410,7 +394,7 @@ if (!function_exists('smartystudio_update_admin_footer')) {
 	 * @return void
 	 */
 	function smartystudio_update_admin_footer() {
-		echo 'WordPress Admin UI by&nbsp;<p><a href="https://smartystudio.net" target="_blank">Smarty Studio</a> | Powered by <a href="http://wordpress.org" target="_blank">WordPress</a></p>';
+		echo '<div style="display:inline-block;"><img src="' . plugins_url() . '/smartystudio-admin-ui/src/assets/images/smartystudio-sm.png" style="position:relative;top:3px;margin-right:10px;">WordPress Admin UI by&nbsp;<a href="https://smartystudio.net" target="_blank">SMARTY STUDIO</a> | Powered by <a href="http://wordpress.org" target="_blank">WordPress</a></div>';
 	}
 
 	add_filter('admin_footer_text', 'smartystudio_update_admin_footer');

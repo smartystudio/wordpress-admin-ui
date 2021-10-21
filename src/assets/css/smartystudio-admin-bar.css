@@ -69,7 +69,19 @@
 }
 
 #wpadminbar ul#wp-admin-bar-root-default > li#wp-admin-bar-wp-logo {
-	display: none;
+	display: inherit;
+}
+
+#wpadminbar #wp-admin-bar-wp-logo >.ab-item {
+    background-image: url('../images/smartystudio-sm.png') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+	padding: 7px 12px;
+}
+
+#wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
+	content: '';
 }
 
 #wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
