@@ -41,4 +41,4 @@ Initial release
 
 ## License
 
-The SmartyStudio\WordPress-Admin-UI is open-source software licensed under the MIT license.
+The SmartyStudio\WordPress-Admin-UI is open-source software licensed under the GNU General Public License v2.0
