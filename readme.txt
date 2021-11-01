@@ -44,3 +44,8 @@ Be sure to check your login page because the default WP logo is a light blue and
 = 1.0 =
 
 Initial release
+
+== Credits ==
+
+- Martin Nestorov - Web Developer @ Smarty Studio.
+- All Contributors
